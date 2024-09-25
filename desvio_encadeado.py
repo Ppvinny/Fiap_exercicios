@@ -4,14 +4,12 @@
 #> 200 500mb
 #<200 nenhum bonus
 
-pontos = int(input('infome a quantidade de pontos do cliente: '))
-if pontos > 1000:
+pontos = int(input('informe a quantidade de pontos do cliente: '))
+if pontos >= 1000:
     print('O cliente recebe 3Gb adicionais! ')
+elif pontos > 500:
+    print('O cliente recebe 1,5Gb adicionais!')
+elif pontos > 200:
+    print('O cliente recebe 500m adicionais!')
 else:
-    if pontos > 500:
-        print('O cliente recebe 1,5Gb adicionais!')
-    else:
-        if pontos > 200:
-            print('O cliente recebe 500Mb adicionais!')
-        else:
-            print('O cliente não recebe dados adicionais!')
+    print('O cliente não recebe dados adicionais!')
