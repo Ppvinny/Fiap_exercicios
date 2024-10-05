@@ -11,15 +11,15 @@ while menu != 4:
         resgate = float(input('Digite o valor a ser resgatado: '))
         dias_investido = int(input('Digite o número de dias que o valor permaneceu investido: '))
 
-        # Cálculo do IR
+
         if menu == 1 and dias_investido <= 180:
-            ir = resgate * 0.225  # 22,5% para até 180 dias
+            ir = resgate * 0.225
         elif menu == 1 and dias_investido <= 360:
-            ir = resgate * 0.20   # 20% para 181 a 360 dias
+            ir = resgate * 0.20
         elif menu == 1 and dias_investido <= 720:
-            ir = resgate * 0.175  # 17,5% para 361 a 720 dias
+            ir = resgate * 0.175
         elif menu == 1 and dias_investido > 720:
-            ir = resgate * 0.15   # 15% para mais de 720 dias
+            ir = resgate * 0.15
 
         print(f'O valor de imposto de renda a ser pago é: R$ {ir:.2f}')
         break
