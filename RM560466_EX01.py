@@ -1,11 +1,10 @@
-#variaveis
+# variaveis
 colaboradores = int(input('Informe o numero de colaboradores: '))
 segunda_f = 0
 terca_f = 0
 quarta_f = 0
 quinta_f = 0
 sexta_f = 0
-
 i = 1
 
 while i <= colaboradores:
@@ -23,7 +22,7 @@ while i <= colaboradores:
         quinta_f += 1
         i += 1
     elif voto.lower() == 'sexta-feira':
-        sexta_f +=1
+        sexta_f += 1
         i += 1
     elif voto.lower() != 'segunda-feira' or 'terça-feira' or 'quarta-feira' or 'quinta-feira' or 'sexta-feira':
         print('Voto inválido, digite novamente')

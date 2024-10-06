@@ -11,7 +11,6 @@ while menu != 4:
         resgate = float(input('Digite o valor a ser resgatado: '))
         dias_investido = int(input('Digite o número de dias que o valor permaneceu investido: '))
 
-
         if menu == 1 and dias_investido <= 180:
             ir = resgate * 0.225
         elif menu == 1 and dias_investido <= 360:
