@@ -1,7 +1,5 @@
 # variaveis
 carro = float(input('Digite o preço do carro: '))
-i = 0
-desconto = 0.20
 acrescimo = 0.03
 parcelado = 0
 preco_avista = carro - (carro * 20 / 100)
