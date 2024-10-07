@@ -17,7 +17,7 @@ for parcelas in lista:
     elif parcelas == 12:
         juros = 0.25 * valor_inicial
 
-    divida = valor_inicial + juros  # Armazenou 1000 reais na variavel divida
-    valor_parcela = divida / parcelas  # Percorreu a lista
+    divida = valor_inicial + juros
+    valor_parcela = divida / parcelas
 
     print(f'Total:R$ {divida} Juros:R$ {juros} Número de parcelas: {parcelas} Valor da Parcela:R${valor_parcela:.2f}')
